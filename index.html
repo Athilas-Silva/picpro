@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicPro</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <figure id="logoPicPro">
+                <img src="./img/logo-picpro.png" alt="">
+            </figure>
+
+            <figure id="logoKenzie">
+                <img src="./img/logo-kenzie.png" alt="">
+            </figure>
+        </div>
+    </header>
+
+    <main>
+        <section id="detailsAccount">
+            <div class="container">
+                <div id="abountUser">
+                    <div id="nameUser">
+                        <img src="./img/photo.png" alt="Foto de perfil">
+                        <p>Olá, <strong>@AthilasSilva</strong></p>
+                    </div>
+
+                    <div id="icons">
+                        <img src="./img/presente.png" alt="Icone de presente">
+                        <img src="./img/chat.png" alt="Icone de chat">
+                    </div>
+                </div>
+
+                <div id="balance">
+                    <div>
+                        <p>Saldo PicPay</p>
+                        <div id="value">
+                            <p id="values">R$ 15.000</p>
+                            <img id="eye" src="./img/visualizar.png" alt="Icone de visualizar saldo">
+                        </div>
+                    </div>
+                    <button>Extrato</button>
+                </div>
+
+
+                <ul class="optionsTransactions">
+                    <li class="itemTransaction qrCode" id="1">
+                        <figure>
+                            <img src="./img/qrcode.png" alt="">
+                        </figure>
+                        <p>QR Code</p>
+                    </li>
+
+                    <li class="itemTransaction pix" id="2">
+                        <figure>
+                            <img src="./img/pix.png" alt="">
+                        </figure>
+                        <p>Pix</p>
+                    </li>
+
+                    <li class="itemTransaction boleto" id="3">
+                        <figure>
+                            <img src="./img/codigo.png" alt="">
+                        </figure>
+                        <p>Pagar Boleto</p>
+                    </li>
+
+                    <li class="itemTransaction boleto" id="4">
+                        <figure>
+                            <img src="./img/cobrar-icon.png" alt="">
+                        </figure>
+                        <p>Cobrar</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sectionTransaction">
+            <div class="container">
+                <div class="warning show">
+                    <p>Selecione a forma de pagamento</p>
+                    <img src="./img/banner.png" alt="">
+                </div>
+
+                <div data-id="1" class="qrCode">
+                    <img src="./img/qrcode-imagem.png" alt="">
+                    <p>@AthilasSilva</p>
+                    <button>Cobre um amigo</button>
+                    <a href="#">Compartilhar meu código</a>
+                </div>
+
+                <div data-id="2" class="pix">
+                    <img src="./img/pix-logo.png" alt="">
+                    <div class="boxOption">
+                        <img src="./img/pix1.png" alt="">
+                        <p>Envie por CPF/CNPJ, telefone, e-mail ou chave aleatória</p>
+                    </div>
+
+                    <div class="boxOption">
+                        <img src="./img/pix2.png" alt="">
+                        <p>Insira um código Pix Copia e Cola para enviar um pagamento</p>
+                    </div>
+                </div>
+
+                <div data-id="3" class="ticket">
+                    <img src="./img/boleto.png" alt="">
+                    <h2>Pagar com código de Barras</h2>
+                    <p>Você pode parcelar em até 12x no cartão ou usar seu saldo em carteira pra pagar à vista.</p>
+
+                    <input type="text" placeholder="Insira um código de barras">
+
+                    <button id="btn-ticket">Pagar Boleto</button>
+                </div>
+
+                <div data-id="4" class="demand">
+                    <img src="./img/cobrar.png" alt="">
+                    <h2>Cobrar</h2>
+                    <p>Divida a conta com os amigos de forma fácil!</p>
+
+                    <input class="name" type="text" placeholder="Insira o nome do devedor">
+
+                    <input class="number" id="short" type="number" placeholder="Valor">
+
+                    <button id="demand-btn">Enviar Cobrança</button>
+                    <div class="boxOption">
+                        <img src="./img/picpay-icon.png" alt="">
+                        <p><strong>Amigos do Picpay</strong>Divida e acompanhe um gasto com pessoas por aqui</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul id="menuMain">
+                <li class="menuItem">
+                    <a href="#">
+                        <img src="./img/inicio.png" alt="">
+                        <p>Inicio</p>
+                    </a>
+                </li>
+
+                <li class="menuItem">
+                    <a href="#">
+                        <img src="./img/carteira.png" alt="">
+                        <p>Carteira</p>
+                    </a>
+                </li>
+
+                <li class="menuItem pay">
+                    <a href="#">
+                        <img src="./img/pagar.png" alt="">
+                        <p>Pagar</p>
+                    </a>
+                </li>
+
+                <li class="menuItem">
+                    <a href="#">
+                        <img src="./img/notificacao.png" alt="">
+                        <p>Notificações</p>
+                    </a>
+                </li>
+
+                <li class="menuItem">
+                    <a href="#">
+                        <img src="./img/bolsa.png" alt="">
+                        <p>Store</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
